@@ -1,0 +1,10 @@
+[{
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": { 
+        "namespace": "android_app", 
+        "package_name": "com.example.stake_pool_lotto",
+        "sha256_cert_fingerprints": [
+            "87:2C:79:F2:22:4E:B3:81:7A:40:A5:4F:76:11:FC:B4:9F:D0:25:95:5A:CC:2F:DB:96:D7:B6:5A:E5:00:40:4F"
+        ]
+    }
+}]

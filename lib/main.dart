@@ -1,4 +1,7 @@
+
+import 'dart:html' as html;
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:url_launcher/url_launcher_string.dart';
 
 void main() {
@@ -8,6 +11,14 @@ void main() {
 class MyApp extends StatelessWidget {
 
   const MyApp({Key? key}) : super(key: key);
+
+  void _onTapDownload() {
+    const String href = 'https://drive.google.com/uc?export=download&id=1hwnBpdzhnO3OmPtX-aswa_WmgmNYSFsF';
+    html.AnchorElement anchorElement = html.AnchorElement(href: href);
+    anchorElement.target = '_blank';
+    anchorElement.download = 'apk-release.apk';
+    anchorElement.click();
+  }
 
   Widget iconLink(final String name, { required final String url }) => InkWell(
     child: Image.asset(
@@ -56,6 +67,19 @@ class MyApp extends StatelessWidget {
                               'Winner takes all Stake Pool.',
                               textAlign: TextAlign.center,
                               style: TextStyle(fontSize: 16, color: Colors.white60),
+                            ),
+                          ),
+                          const SizedBox(
+                            height: 32.0,
+                          ),
+                          TextButton(
+                            onPressed: _onTapDownload,
+                            style: IconButton.styleFrom(
+                              minimumSize: const Size.fromHeight(48.0),
+                            ), 
+                            child: Image.asset(
+                              'icons/android_badge_light.png',
+                              height: 48,
                             ),
                           ),
                         ],
