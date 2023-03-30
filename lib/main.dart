@@ -32,7 +32,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Stake Pool Drops',
+      title: 'Solana Dream Drop',
       debugShowCheckedModeBanner: false,
       routes: {
         '/': (context) => Scaffold(
@@ -46,27 +46,20 @@ class MyApp extends StatelessWidget {
                 children: [
                   Expanded(
                     child: Center(
-                      child: Column(
-                        mainAxisAlignment: MainAxisAlignment.center,
+                      child: ListView(
+                        shrinkWrap: true,
                         children: [
                           Image.asset(
-                            'icons/logo.png',
-                            width: 128.0, height: 128.0,
-                          ),
-                          const SizedBox(
-                            height: 16.0,
-                          ),
-                          const Text(
-                            'STAKE POOL DROPS',
-                            textAlign: TextAlign.center,
-                            style: TextStyle(fontSize: 32, color: Colors.white),
+                            'icons/splash_logo.png',
+                            width: 540,
+                            height: 540,
                           ),
                           const Padding(
                             padding: EdgeInsets.only(top: 8.0),
                             child: Text(
-                              'Winner takes all Stake Pool.',
+                              'A winner takes all Stake Pool.',
                               textAlign: TextAlign.center,
-                              style: TextStyle(fontSize: 16, color: Colors.white60),
+                              style: TextStyle(fontSize: 16, color: Colors.white),
                             ),
                           ),
                           const SizedBox(
@@ -102,7 +95,7 @@ class MyApp extends StatelessWidget {
                       ),
                       iconLink(
                         'twitter300.png', 
-                        url: 'https://twitter.com/StakePoolDrops',
+                        url: 'https://twitter.com/SolanaDreamDrop',
                       ),
                     ],
                   ),

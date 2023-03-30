@@ -1,4 +1,4 @@
-package com.example.stake_pool_lotto_website
+package com.merigo.dream_drops_website
 
 import io.flutter.embedding.android.FlutterActivity
 
