@@ -1,4 +1,4 @@
-# stake_pool_lotto_website
+# defi_bond_website
 
 ## Netlify Deployment
 
